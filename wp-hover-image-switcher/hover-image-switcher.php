@@ -18,7 +18,7 @@ class hoverImageSwitcher {
 		// // Define constants used throughout the plugin
 		// //$this -> init_plugin_constants();
 // 
-		// load_plugin_textdomain(WP_PLUGIN_URL . '/hover-image-switcher', false, dirname(plugin_basename(__FILE__)) . '/lang');
+		// load_plugin_textdomain(WP_PLUGIN_URL . '/wp-hover-image-switcher', false, dirname(plugin_basename(__FILE__)) . '/lang');
 
 		add_action('wp_enqueue_scripts', array($this, 'register_scripts_and_styles'));
 		add_action('init', array($this, 'add_button'));
@@ -46,7 +46,7 @@ class hoverImageSwitcher {
 
 
 	function add_plugin($plugin_array) {
-		$plugin_array['his'] = WP_PLUGIN_URL . '/hover-image-switcher/js/tinymce-button.js';
+		$plugin_array['his'] = WP_PLUGIN_URL . '/wp-hover-image-switcher/js/tinymce-button.js';
 		return $plugin_array;
 	}
 
@@ -67,7 +67,7 @@ class hoverImageSwitcher {
 
 	function register_scripts_and_styles() {
 		
-		wp_register_script('his', WP_PLUGIN_URL . '/hover-image-switcher/js/hover-image-switcher.js', array('jquery'));
+		wp_register_script('his', WP_PLUGIN_URL . '/wp-hover-image-switcher/js/hover-image-switcher.js', array('jquery'));
 		wp_enqueue_script('his');
 		
 	}// end register_scripts_and_styles
