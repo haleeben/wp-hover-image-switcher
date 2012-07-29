@@ -11,8 +11,16 @@ jQuery(document).ready(function($) {
   	
   	//Switch the image files
 	$('img.hover-image-switcher').hover( 
-			function() { jQuery(this).attr("src", jQuery(this).attr("src").replace(".","-hover.")); }, 
-			function () { jQuery(this).attr("src", jQuery(this).attr("src").replace("-hover.",".")); } 
+		
+			function() { 
+			
+				$(this).attr("src",$(this).attr("src").replace(".","-hover.")); 
+			}, 
+			function () { 
+				
+				$(this).attr("src",$(this).attr("src").replace("-hover.",".")); 
+				
+			}
 	);  
 
 }); 
