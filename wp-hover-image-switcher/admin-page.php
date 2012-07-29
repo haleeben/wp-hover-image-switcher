@@ -13,7 +13,7 @@
     <h4>Instructions</h4>
     <ol>
     <li><p>After installing and activating the Hover Image Switcher Plugin all you need to do is go to your post/page editor and look for the Hover Image Switcher button.</p></li>
-  	<img src="<?php echo WP_PLUGIN_URL.'/hover-image-switcher/images/his_screen.png'?>" alt='Hover Image Switcher Button Locator Screen Shot' />
+  	<img src="<?php echo WP_PLUGIN_URL.'/wp-hover-image-switcher/images/his_screen.png'?>" alt='Hover Image Switcher Button Locator Screen Shot' />
   	
   	<li><p>After you press the button you will see the tags [his] [/his] , insert your images between these two tags.</p></li>
   	<li><strong> IMPORTANT: Both images must have the same name except that the hover image must end with -hover.</strong>
